@@ -1,0 +1,46 @@
+Iframe - frame inside a frame
+Button - contains action and clickable
+Inspect Button - 1 click per inspection
+=======================================
+SearchBox
+Locators: 8 types
+id - attribute
+name - attribute
+class - attribute
+tag
+css - 1 second faster than xPath selector
+xPath - 1 second slower than css selector
+
+Link Test:
+link text
+partial link text
+
+   driver.findElement(By.id("enter code here"))."action" //EX: sendKey("Enter search text here");
+   driver.findElement(By.className("enter code here"))."action" //EX: click();
+   driver.findElement(By.cssSelector("enter code here"));
+   driver.findElement(By.xpath("enter code here"));
+   driver.findElement(By.tagName("enter code here"));
+   driver.findElement(By.name("enter code here"));
+   driver.findElement(By.linkText("enter code here"));
+   driver.findElement(By.ByPartialLinkText)
+========================================
+Attribute
+<input id=" ">
+
+========================================
+- must search for unique values/keys
+- first search - ID, if not unique
+- second search - name, if not unique
+- third search - class, if not unique
+- fourth search - tag, if not unique
+- fifth search - css, if not unique
+- sixth search - xPath, if not unique
+- seventh search - Link Test, if not unique
+- eighth search - Partial link text
+
+========================================
+to look for unique key of a specific selection
+- right click on code - copy - copy xPath
+
+========================================
+sendKeys();=text/value input
